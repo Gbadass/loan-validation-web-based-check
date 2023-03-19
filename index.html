@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <div class="container">
+    <div class="innercon">
+      <div class="newd">
+        <h1><span>BANK</span> OF NIGERIA</h1>
+        <img src="./logo-removebg-preview.png" alt="">
+      </div>
+
+
+
+ 
+    </div>
+    <div class="linediv"></div>
+    <div class="anchorD">
+      <a href="">Home Loan</a>
+      <a href="">Investing & Wealth Management</a>
+      <a href="">Small Business</a>
+      <a href="">Commercial Banking</a>
+      <a href="">Local Investment</a>
+    </div>
+
+    <div class="divvs">    
+    <div class="innerdiv1"><img src="./a9.jpg" alt=""></div>
+    <b>Hi Gerald</b>
+  </div>
+
+    <div class="m-div">
+      <div class="balance1">
+        <div class="b-div"><p class="p1">TOTAL BALANCE:</p></div>
+  
+        <p id="total-el" class="p2">&#8358;55,43.00</p>
+      </div>
+      <div class="balance1">
+        <div class="b-div"><p class="p1">AVAILABLE BALANCE:</p></div>
+  
+        <p class="p2">&#8358;45,43.00</p>
+      </div>
+    </div>
+    
+    <div class="input-div">
+      <h2>Please Fill The Required Details For Loan Validation.</h2>
+      <form id="form">
+
+        <label for="">
+          <input id="input-annualIncome" required type="number"  placeholder="Annual Income">
+          <p id="annual-income"></p>
+        </label> <br> <br>
+
+        <label for="">
+
+          <select id="input-accountType"  required style="width:620px">
+            <option hidden>Account Type</option>
+            <option value="Current">Current</option>
+            <option value="Savings">Savings</option>
+          </select>
+
+          <!-- <input id="input-el2" type="text" placeholder="Account Type"> -->
+          <p id="account-type"></p>
+        </label> <br> <br>
+        <label for="">
+          <input id="input-currentBalance" required default="0" type="number" placeholder="Current Account Balance">
+          <p id="c-abalance"></p>
+        </label> <br> <br>
+        <label for="">
+          <input id="input-bankingDuration" required type="number" placeholder="Banking Duration (Months)">
+          <p id="b-duration"></p>
+        </label> <br> <br>
+        <label for="">
+          <p>Last Deposit Date:</p>
+          <input id="input-lastDepositDate" required type="date" placeholder="Last Deposit Date">
+          <p id="last-d"></p>
+        </label> <br> <br>
+        <label for="">
+          <p>Previous Loan date (Months)</p>
+          <input id="input-previousLoanDate" required type="number" placeholder="Previous Loan date">
+          <p id="p-loan"></p>
+        </label> <br> <br>
+        <label for="">
+          <p>Previous Loan Payment date:</p>
+          <input id="input-previousLoanPaymentDate" required type="number" placeholder="Previous Loan Payment Date">
+          <p id="p-payment"></p>
+        </label> <br> <br>
+        <label for="">
+          <input id="input-loanAmount" type="number" required default="0" placeholder="Loan Amount">
+          <p id="loan-amount"></p>
+        </label> <br> <br>
+        <!-- <label for="">
+          <input id="input-el6" type="text" placeholder="">
+        </label> -->
+        <button type="submit" id="button-el">PROCEED</button>
+      </form>
+
+
+      <p class="" id="message"></p>
+    
+    </div>
+
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
